@@ -3,6 +3,10 @@ import './App.css';
 import Navbar from './components/navbar/Navbar';
 import Section from "./components/page/Section";
 import {MenuItems} from "./components/navbar/MenuItems";
+import HomePage from "./components/page/home/HomePage";
+import AboutMe from "./components/page/aboutme/AboutMePage";
+
+
 
 
 function App() {
@@ -10,6 +14,15 @@ function App() {
     <div className="App">
       <Navbar />
 
+      <HomePage 
+        title={"Home"}
+        id="Home"> 
+        </HomePage>
+
+        <AboutMe
+        title={"About Me"}
+        id="AboutMe"
+        ></AboutMe>
 
       {MenuItems.map((item,index) => 
 {
