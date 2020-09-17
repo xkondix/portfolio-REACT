@@ -7,10 +7,19 @@ import './HomePage.css';
 export default function HomePage({ title,id}) {
 
  
-  const [visible, setvisible] = useState(true);
+  const [visible, setvisible] = useState(false);
+
+  const [number, setnumber] = useState(0);
   
   
   useEffect(() => {
+
+
+    if(number === 0)
+    {
+      setnumber(1);
+      setvisible(true);
+    }
 
     const onHashChanged = () => {
 

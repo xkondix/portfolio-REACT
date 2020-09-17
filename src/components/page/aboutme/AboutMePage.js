@@ -1,36 +1,43 @@
-import React, {useEffect, useRef} from "react";
-import {TweenMax, Power3} from 'gsap';
+import React, {useEffect, useState} from "react";
 import './AboutMePage.css';
-import { _colorStringFilter } from "gsap/gsap-core";
 
 
 export default function AboutMe({ title,id }) {
 
-  let aboutMe = useRef(null);
+  const [visible, setvisible] = useState(false);
+
 
   useEffect(() => {
-    
-    TweenMax.to(aboutMe, 10,
-      {
-        opacity : 1,
-        y : -30,
-        ease : Power3.easeInOut
-      })
 
-   
-  },[])
+    const onHashChanged = () => {
+
+      console.log(visible)
+      if(window.location.hash === '#aboutme')
+      {
+        setvisible(true)
+      }
+      else
+      {
+        setvisible(false)
+      }
+     
+    }
+
+    window.addEventListener('hashchange', onHashChanged)
+    return () => window.removeEventListener('hashchange', onHashChanged)
+},[visible])
 
 
 
   return (
 
+    <div className={visible? "activeAbout" : "hiddenAbout"}>
     <div className={"section"}>
-        
       <div className="section-content" id={id}>
-        <h1 id="about"
-        ref={element => {aboutMe = element;}}>
+        <h1 id="about">
           About Me</h1>
       </div>
+    </div>
     </div>
   );
 } 

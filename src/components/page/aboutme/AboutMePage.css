@@ -1,11 +1,18 @@
 h1#about
 {
     font-family: Verdana;
-    text-decoration-style: wavy;
     margin-left : 80px;
     color: wheat;
     font-size: 3rem;
     text-shadow: 2px 2px 5px blanchedalmond;
-    opacity: 0;
     
+}
+
+
+.activeAbout{
+    opacity: 1;
+    transition: all 3s; }
+.hiddenAbout {
+    opacity: 0;
+    transition: all 1s;
 }

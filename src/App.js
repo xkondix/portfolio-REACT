@@ -20,7 +20,16 @@ export default class App extends Component {
     
     this.state = { 
       currentPage: 0,
-      show: true };
+      show: true,
+      navbar :
+      {
+        0 : false,
+        1 : false,
+        2 : false,
+        3 : false,
+        4 : false,
+      }
+     };
   }
 
   handlePageChange = number => {
@@ -39,7 +48,13 @@ export default class App extends Component {
 
     }
   
+    this.state.navbar[this.state.currentPage] = false;
+    this.forceUpdate()
+
     this.setState({ currentPage: number });
+
+    this.state.navbar[number] = true;
+    this.forceUpdate()
 
     switch (number) {
       case 0:
@@ -72,7 +87,7 @@ export default class App extends Component {
     MenuItems.map((item,index) => 
             {
               pageNumbers.push(
-                <Pager.Item key={index} eventKey={index} className={"nav-item"} onSelect={this.handlePageChange}>
+                <Pager.Item key={index} eventKey={index} className={this.state.navbar[index] ? "nav-item-active" : "nav-item"} onSelect={this.handlePageChange}>
                   {item.name}
                 </Pager.Item>,
               );
@@ -103,7 +118,7 @@ export default class App extends Component {
               </div>
         </Pager>
       </div>
-      
+
          <ReactPageScroller
             pageOnChange={this.handlePageChange}
             containerWidth={window.innerWidth}
