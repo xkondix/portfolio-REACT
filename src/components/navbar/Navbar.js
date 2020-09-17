@@ -7,7 +7,16 @@ class Navbar extends Component {
     scroll.scrollToTop();
   };
 
+
+  changeActive = (hash) => {
+   
+    window.location.assign('http://localhost:3000/'+hash)
+    console.log(window.location);
+  };
+
+
   render() {
+    
     return (
       <nav className="nav" id="navbar">
         <div className="nav-content">
@@ -22,8 +31,9 @@ class Navbar extends Component {
                                 smooth={true}
                                 offset={-70}
                                 duration={500}
-                                className={item.cName} href={item.url}>
-                                    {item.title}        
+                                className={item.title} href={item.url}
+                                onClick={e => this.changeActive(item.url)}>
+                                    {item.title} 
                         </Link> 
                     </li>)
             })}

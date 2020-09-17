@@ -1,12 +1,57 @@
-h1
+
+
+h1#name
 {
-    font-family: cursive;
-    text-decoration: underline;
+    font-family: Verdana;
+    text-decoration-style: wavy;
+    margin-left : 80px;
+    color: cadetblue;
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px blanchedalmond;
+    opacity: 0;
+    
 }
 
-img
+
+img#me
 {
+
     max-width: 70%;
     max-height: 80%;
+    margin-left: 80px;
+    margin-top: 25px;
+    opacity: 0;
+
 }
 
+img#java
+{
+    
+    margin-top: 30px;
+    opacity: 0;
+}
+
+div#text-photo
+{
+    width: auto;
+    height: 550px;
+    display: flex;
+    
+    
+    
+}
+
+div#java
+{
+    margin-top: 100px;
+    margin-left: 50px;
+    
+}
+
+
+
+div#sectionxd
+{
+    height: 530px;
+    background-color: red;
+}

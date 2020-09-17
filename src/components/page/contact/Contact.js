@@ -1,10 +1,8 @@
 import React, {useEffect, useRef} from "react";
 import {TweenMax, Power3} from 'gsap';
-import './AboutMePage.css';
-import { _colorStringFilter } from "gsap/gsap-core";
 
 
-export default function AboutMe({ title,id }) {
+export default function Contact({ title,id }) {
 
   let aboutMe = useRef(null);
 
@@ -24,7 +22,10 @@ export default function AboutMe({ title,id }) {
 
   return (
 
-    <div className={"section"}>
+    <div style={
+      {
+        // backgroundImage: `url(${require("./bacground2.png")})`      
+      }}  className={"section"}>
         
       <div className="section-content" id={id}>
         <h1 id="about"

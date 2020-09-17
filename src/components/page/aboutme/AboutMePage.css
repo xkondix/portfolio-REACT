@@ -1,0 +1,11 @@
+h1#about
+{
+    font-family: Verdana;
+    text-decoration-style: wavy;
+    margin-left : 80px;
+    color: wheat;
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px blanchedalmond;
+    opacity: 0;
+    
+}
