@@ -103,7 +103,7 @@ export default class App extends Component {
               </div>
         </Pager>
       </div>
-
+      
          <ReactPageScroller
             pageOnChange={this.handlePageChange}
             containerWidth={window.innerWidth}
