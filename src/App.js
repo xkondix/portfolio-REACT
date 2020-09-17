@@ -81,7 +81,6 @@ export default class App extends Component {
     return [...pageNumbers];
   };
 
-
  
 
   render () {
@@ -91,7 +90,6 @@ export default class App extends Component {
   return (
     
     
-
     <div 
     style={
       { backgroundImage: `url(${require("./components/page/home/bacground1.jpg")})`,
@@ -112,7 +110,7 @@ export default class App extends Component {
             containerHeight={window.innerHeight}
             customPageNumber={this.state.currentPage}
           >
-             
+
           <HomePage 
             title={"Home"}
             id="Home">

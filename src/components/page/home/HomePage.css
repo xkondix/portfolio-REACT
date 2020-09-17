@@ -8,7 +8,6 @@ h1#name
     color: cadetblue;
     font-size: 3rem;
     text-shadow: 2px 2px 5px blanchedalmond;
-    opacity: 0;
     
 }
 
@@ -20,7 +19,6 @@ img#me
     max-height: 80%;
     margin-left: 80px;
     margin-top: 25px;
-    opacity: 0;
 
 }
 
@@ -28,7 +26,6 @@ img#java
 {
     
     margin-top: 30px;
-    opacity: 0;
 }
 
 div#text-photo
@@ -36,8 +33,6 @@ div#text-photo
     width: auto;
     height: 550px;
     display: flex;
-    
-    
     
 }
 
@@ -50,8 +45,11 @@ div#java
 
 
 
-div#sectionxd
-{
-    height: 530px;
-    background-color: red;
+.activeHome {
+    opacity: 1;
+    transition: all 3s; }
+.hiddenHome {
+    opacity: 0;
+    transition: all 1s;
 }
+
