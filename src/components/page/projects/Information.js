@@ -3,13 +3,13 @@ export const Information = [
     {
         title : 'hurtownia JAVA-SPRING',
         describe : 'Create full rest project of wholesae in spring. In project i use HATEOASE, HIBERNATE, Spring-Boot and MySQL.',
-        src :"https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
+        src :"",
         link : "https://github.com/xkondix/hurtownia-JAVA-SPRING"
         },
     {
         title : 'AlcoPart JAVA-ANDROID',
         describe : 'home',
-        src :"https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
+        src :"",
         link : "https://github.com/xkondix"
         },
     {
@@ -21,7 +21,7 @@ export const Information = [
     {
         title : 'xd',
         describe : 'home',
-        src :"https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
+        src :"",
         link : "https://github.com/xkondix"
         }
     

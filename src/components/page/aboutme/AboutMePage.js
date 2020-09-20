@@ -38,7 +38,7 @@ export default function AboutMe({ title,id }) {
         <h1 id="about">
         {title}</h1>
           <div id='describe'>
-            <p>xd</p>
+            <p>text</p>
         <div className="images">
           <ChangeImage/>
 
