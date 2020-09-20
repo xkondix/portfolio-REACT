@@ -16,9 +16,14 @@ export const MenuItems = [
     url : '#skills',
     },
 {
-    name : "JudgeMe",
-    title : 'JudgeMe',
-    url : '#judgeMe',
+    name : "Projects",
+    title : 'Projects',
+    url : '#projects',
+    },
+{
+    name : "Your Opinion",
+    title : 'YourOpinion',
+    url : '#yourOpinion',
     },
 
 {

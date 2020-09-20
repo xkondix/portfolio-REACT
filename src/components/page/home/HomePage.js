@@ -8,7 +8,6 @@ export default function HomePage({ title,id}) {
 
  
   const [visible, setvisible] = useState(false);
-
   const [number, setnumber] = useState(0);
   
   

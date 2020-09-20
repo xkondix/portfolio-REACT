@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from "react";
-import './AboutMePage.css';
-import ChangeImage from './ChangeImage';
+import './Projects.css';
+import PagerComponent from './Pager.js'
 
 
-export default function AboutMe({ title,id }) {
+export default function Projects({ title,id }) {
 
   const [visible, setvisible] = useState(false);
 
@@ -13,7 +13,7 @@ export default function AboutMe({ title,id }) {
     const onHashChanged = () => {
 
       console.log(visible)
-      if(window.location.hash === '#aboutMe')
+      if(window.location.hash === '#projects')
       {
         setvisible(true)
       }
@@ -32,18 +32,14 @@ export default function AboutMe({ title,id }) {
 
   return (
 
-    <div className={visible? "activeAbout" : "hiddenAbout"}>
+    <div className={visible? "activeProjects" : "hiddenProjects"}>
     <div className={"section"}>
       <div className="section-content" id={id}>
-        <h1 id="about">
-        {title}</h1>
-          <div id='describe'>
-            <p>xd</p>
-        <div className="images">
-          <ChangeImage/>
-
-          </div>
-          </div>
+        <h1 >
+          {title}
+        </h1>
+          <PagerComponent />
+  
       </div>
     </div>
     </div>

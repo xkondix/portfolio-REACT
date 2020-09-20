@@ -1,0 +1,18 @@
+.slide
+{
+  max-width: 400px;
+  max-height: 400px;
+  overflow: hidden;
+
+}
+.image
+{
+    max-width: 400px;
+    max-height: 400px;
+    box-shadow: 1px 1px 10px 1px white, 0 17px 50px 0 rgba(0,0,0,0.19);
+  
+}
+
+
+
+

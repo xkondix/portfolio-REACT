@@ -1,4 +1,4 @@
-h1#about
+h1
 {
     font-family: Verdana;
     text-decoration-style: wavy;
@@ -9,28 +9,10 @@ h1#about
 }
 
 
-.activeAbout{
+.activeOpinion{
     opacity: 1;
     transition: all 3s; }
-.hiddenAbout {
+.hiddenOpinion {
     opacity: 0;
     transition: all 1s;
-}
-
-
-.images
-{
-    margin-top: 25px;
-    margin-left: 50%;
-    width: 500px;
-    height: 500px;
-}
-
-div#describe
-{
-    width: auto;
-    max-width: 100%;
-    max-height: 100%;
-    display: flex;
-    
 }

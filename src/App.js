@@ -1,10 +1,11 @@
 import React, { Component, Fragment } from 'react';
 import './App.css';
-import Navbar from './components/navbar/Navbar';
+
 import {MenuItems} from "./components/navbar/MenuItems";
 import HomePage from "./components/page/home/HomePage";
 import AboutMe from "./components/page/aboutme/AboutMePage";
 import Skills from "./components/page/skills/Skills";
+import Projects from "./components/page/projects/Projects";
 import Contact from "./components/page/contact/Contact";
 import GiveMeRate from "./components/page/giverate/GiveMeRate";
 import ReactPageScroller  from 'react-page-scroller'
@@ -28,6 +29,8 @@ export default class App extends Component {
         2 : false,
         3 : false,
         4 : false,
+        5 : false,
+
       }
      };
   }
@@ -58,22 +61,26 @@ export default class App extends Component {
 
     switch (number) {
       case 0:
-        window.location.assign('http://localhost:3000/#home')
+        window.location.hash = '#home';
         break;
       case 1:
-        window.location.assign('http://localhost:3000/#aboutme')
+        window.location.hash = '#aboutMe';
         break;
 
       case 2:
-        window.location.assign('http://localhost:3000/#skills')
+        window.location.hash = '#skills';
         break;
 
       case 3:
-        window.location.assign('http://localhost:3000/#judgeMe')
+        window.location.hash = '#projects';
         break;
 
       case 4:
-        window.location.assign('http://localhost:3000/#concact')
+        window.location.hash = '#yourOpinion';
+        break;
+
+      case 5:
+        window.location.hash = '#contact';
         break;
       default:
        console.log("error");
@@ -141,8 +148,13 @@ export default class App extends Component {
              id="Skills">
             </Skills>
 
+            <Projects 
+            title={"Projects"}
+            id="Projects">
+            </Projects>
+
             <GiveMeRate 
-            title={"Give Me Rate"}
+            title={"Your Opinion"}
             id="GiveMeRate">
             </GiveMeRate>
 

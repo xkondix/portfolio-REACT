@@ -1,37 +1,44 @@
-import React, {useEffect, useRef} from "react";
-import {TweenMax, Power3} from 'gsap';
+import React, {useEffect, useState} from "react";
+import './GiveMeRate.css';
 
 
-export default function GiveMeRate({ title,id }) {
+export default function YourOpinion({ title,id }) {
 
-  let aboutMe = useRef(null);
+  const [visible, setvisible] = useState(false);
+
 
   useEffect(() => {
-    
-    TweenMax.to(aboutMe, 10,
-      {
-        opacity : 1,
-        y : -30,
-        ease : Power3.easeInOut
-      })
 
-   
-  },[])
+    const onHashChanged = () => {
+
+      console.log(visible)
+      if(window.location.hash === '#yourOpinion')
+      {
+        setvisible(true)
+      }
+      else
+      {
+        setvisible(false)
+      }
+     
+    }
+
+    window.addEventListener('hashchange', onHashChanged)
+    return () => window.removeEventListener('hashchange', onHashChanged)
+},[visible])
 
 
 
   return (
 
-    <div style={
-      {
-        // backgroundImage: `url(${require("./bacground2.png")})`      
-      }}  className={"section"}>
-        
+    <div className={visible? "activeOpinion" : "hiddenOpinion"}>
+    <div className={"section"}>
       <div className="section-content" id={id}>
-        <h1 id="about"
-        ref={element => {aboutMe = element;}}>
-          About Me</h1>
+        <h1 >
+          {title}</h1>
+          
       </div>
+    </div>
     </div>
   );
 } 
