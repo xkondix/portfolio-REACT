@@ -3,7 +3,7 @@ export const Information = [
     {
         title : 'hurtownia JAVA-SPRING',
         describe : 'Create full rest project of wholesae in spring. In project i use HATEOASE, HIBERNATE, Spring-Boot and MySQL.',
-        src :"",
+        src :"https://www.youtube.com/watch?v=KkhGkRahU6g",
         link : "https://github.com/xkondix/hurtownia-JAVA-SPRING"
         },
     {

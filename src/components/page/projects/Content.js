@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import { Player } from 'video-react';
+import ReactPlayer from 'react-player'
 import './Content.css'
 import ResponsiveDialog from './DialogMaterial'
 import git from './git2.png'
@@ -13,19 +13,21 @@ export default function Content({ title,content,link,src })
   
     return (
   
-        <div className="con">
         <div className="video" align="center" valign="center"
         >
         <h2>{title}</h2>
-        <Player
-         playsInline
-         poster="/assets/poster.png"
-         src={src}
-         fluid={false}
-         width={380}
-         height={210}
-         className = 'player'
+
+        <div className='player-wrapper'>
+        <ReactPlayer
+         playsinline = {true}
+         controls = {true}
+         style={{ border: '4px solid black' }}
+         url={src}
+         width='90%'
+         height='90%'
+         className = 'react-player' 
       />
+      </div>
       <div className='describe'>
       <a href={link}>
         <img src={git} alt = 'error' />
@@ -33,7 +35,6 @@ export default function Content({ title,content,link,src })
         <ResponsiveDialog
         title = {title}
         content ={content}/>
-      </div>
       </div>
       </div>
     )
