@@ -12,7 +12,6 @@ export default function AboutMe({ title,id }) {
 
     const onHashChanged = () => {
 
-      console.log(visible)
       if(window.location.hash === '#aboutMe')
       {
         setvisible(true)

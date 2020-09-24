@@ -12,7 +12,6 @@ export default function Projects({ title,id }) {
 
     const onHashChanged = () => {
 
-      console.log(visible)
       if(window.location.hash === '#projects')
       {
         setvisible(true)

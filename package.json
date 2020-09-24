@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^7.2.1",
     "bootstrap": "^4.5.2",
     "gsap": "^3.5.1",
+    "mdbreact": "^4.27.0",
     "react": "^16.13.1",
     "react-animate-on-scroll": "^2.1.5",
     "react-animation": "^1.2.2",

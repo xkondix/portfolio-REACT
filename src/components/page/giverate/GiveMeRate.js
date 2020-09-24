@@ -1,5 +1,7 @@
 import React, {useEffect, useState} from "react";
 import './GiveMeRate.css';
+import DatatablePage from './ScrollReviews'
+import SendRate from './SendRate'
 
 
 export default function YourOpinion({ title,id }) {
@@ -36,7 +38,13 @@ export default function YourOpinion({ title,id }) {
       <div className="section-content" id={id}>
         <h1 >
           {title}</h1>
-          
+
+          <div className="borderPx">
+
+          <SendRate/>
+          <DatatablePage/>
+
+          </div>
       </div>
     </div>
     </div>

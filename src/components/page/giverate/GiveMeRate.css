@@ -16,3 +16,9 @@ h1
     opacity: 0;
     transition: all 1s;
 }
+
+.borderPx
+{
+    display: flex;
+
+}

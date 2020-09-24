@@ -22,7 +22,6 @@ export default function HomePage({ title,id}) {
 
     const onHashChanged = () => {
 
-      console.log(visible)
       if(window.location.hash === '#home')
       {
         setvisible(true)

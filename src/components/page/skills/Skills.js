@@ -23,7 +23,6 @@ export default function Skills({ title,id }) {
 
     const onHashChanged = () => {
 
-      console.log(visible)
       if(window.location.hash === '#skills')
       {
         setvisible(true)
