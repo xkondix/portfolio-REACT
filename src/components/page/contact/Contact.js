@@ -61,7 +61,7 @@ export default function Conteact({ title,id }) {
               </a>
             </figure>
             <figure className = 'gallery5'>
-              <a href={myPDF} download="cv.pdf">
+              <a href={myPDF} download="Konrad_Kowalczyk_CV.pdf">
                  <img src = {cv} className='gallery__img' alt="error" ></img>
               </a>
             </figure>
