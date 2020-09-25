@@ -42,29 +42,29 @@ export default function Conteact({ title,id }) {
         <h1 >
           {title}</h1>
 
-          <div className="wrapper">
-            <figure className = 'gallery1'>
+          <div className="wrapperContact">
+            <figure className = 'galleryContact1'>
                 <SendEmail/>
             </figure>
-            <figure className = 'gallery2'>
+            <figure className = 'galleryContact2'>
              <div class="img__wrap">
                   <img src = {email} className='img__img' alt="error"></img>
                   <p className="img__description">konrad.kowalczyk.98@gmail.com</p>
               </div>
             </figure>
-            <figure className = 'gallery3'>
+            <figure className = 'galleryContact3'>
               <a href="https://www.linkedin.com/in/konrad-kowalczyk-3a621218b/">
-                  <img src = {linkedlin} className='gallery__img' alt="error"></img>
+                  <img src = {linkedlin} className='galleryContact__img' alt="error"></img>
               </a>
             </figure>
-            <figure className = 'gallery4'>
+            <figure className = 'galleryContact4'>
               <a href="https://www.github.com/xkondix">
-                  <img src = {github}  className='gallery__img' alt="error"></img>
+                  <img src = {github}  className='galleryContact__img' alt="error"></img>
               </a>
             </figure>
-            <figure className = 'gallery5'>
+            <figure className = 'galleryContact5'>
               <a href={myPDF} download="Konrad_Kowalczyk_CV.pdf">
-                 <img src = {cv} className='gallery__img' alt="error" ></img>
+                 <img src = {cv} className='galleryContact__img' alt="error" ></img>
               </a>
             </figure>
 

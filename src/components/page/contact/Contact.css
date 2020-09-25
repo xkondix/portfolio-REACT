@@ -18,49 +18,49 @@ h1
 }
 
 
-.wrapper {
+.wrapperContact {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 5vw);
     grid-gap: 15px;
   }
 
-  .gallery__img {
+  .galleryContact__img {
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
 }
 
 
-.gallery1 {
+.galleryContact1 {
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 5;
 }
 
-.gallery2 {
+.galleryContact2 {
     grid-column-start: 5;
     grid-column-end: 7;
     grid-row-start: 1;
     grid-row-end: 3;
 }
 
-.gallery3 {
+.galleryContact3 {
     grid-column-start: 7;
     grid-column-end: 9;
     grid-row-start: 1;
     grid-row-end: 3;
 }
 
-.gallery4 {
+.galleryContact4 {
     grid-column-start: 5;
     grid-column-end: 7;
     grid-row-start: 3;
     grid-row-end: 5;
 }
 
-.gallery5 {
+.galleryContact5 {
     grid-column-start: 7;
     grid-column-end: 9;
     grid-row-start: 3;
