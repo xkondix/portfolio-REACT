@@ -42,12 +42,9 @@ export default class ScrollReview extends Component {
 
 
 
-var params = {
-  mode: 'cors',
-  credentials: 'include'  
-}
 
-    fetch("http://portfolio98kk.herokuapp.com/api/data",params)
+
+    fetch("http://portfolio98kk.herokuapp.com/api/data")
       .then(res => res.json())
       .then(
         (result) => {
