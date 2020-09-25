@@ -41,7 +41,7 @@ export default class ScrollReview extends Component {
   componentDidMount() {
 
 
-    fetch("http://portfolio98kk.herokuapp.com/api/data")
+    fetch("https://portfolio98kk.herokuapp.com/api/data")
       .then(res => res.json())
       .then(
         (result) => {

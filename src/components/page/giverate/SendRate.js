@@ -24,7 +24,7 @@ export default class SendRate extends Component {
 
 
     console.log(this.state)
-    fetch('http://portfolio98kk.herokuapp.com/api/data', {
+    fetch('https://portfolio98kk.herokuapp.com/api/data', {
     method: 'POST',
     headers: {
       'Accept': 'application/json',
