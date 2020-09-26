@@ -1,7 +1,6 @@
 import React , {Component} from 'react';
 import { MDBContainer, MDBInputGroup, MDBBtn } from "mdbreact";
 import './SendRate.css'
-import button from "./button.jpeg"
 
 export default class SendRate extends Component {
     constructor(props) {
@@ -9,7 +8,7 @@ export default class SendRate extends Component {
       this.state = {
           name: '',
           email:'',
-          comment:'',
+          message:'',
           company:''
         };
       this.handleSubmit = this.handleSubmit.bind(this);
@@ -34,7 +33,7 @@ export default class SendRate extends Component {
     body: JSON.stringify({
       name: this.state.name,
       email: this.state.email,
-      comment: this.state.comment,
+      message: this.state.message,
       company: this.state.company
     })
   })
@@ -47,12 +46,13 @@ export default class SendRate extends Component {
         
         <div className="layout">
         <MDBContainer >
-        <MDBInputGroup containerClassName="mb-3" prepend="Name" hint="Nick or Name" defaultValue={this.state.name} onChange={(event)=>this.handleChange(event, "name")} />
         <MDBInputGroup containerClassName="mb-3" prepend="Email" type='email' hint="Email" defaultValue={this.state.email} onChange={(event)=>this.handleChange(event, "email")} />
+        <MDBInputGroup containerClassName="mb-3" prepend="Name" hint="Nick or Name" defaultValue={this.state.name} onChange={(event)=>this.handleChange(event, "name")} />
         <MDBInputGroup containerClassName="mb-3" prepend="Company" hint="It is not necessary" defaultValue={this.state.company} onChange={(event)=>this.handleChange(event, "company")} /> 
-        <MDBInputGroup containerClassName="mb-3" prepend="Comment" type="textarea" defaultValue={this.state.comment} onChange={(event)=>this.handleChange(event, "comment")}  />
-        <MDBBtn onClick={this.handleSubmit} >Send</MDBBtn>
-               </MDBContainer>
+        <MDBInputGroup containerClassName="mb-3" prepend="Message" type="textarea" defaultValue={this.state.message} onChange={(event)=>this.handleChange(event, "message")}  />
+        <button  onClick={this.handleSubmit}>SEND</button>
+        </MDBContainer>
+
 
         </div>
 
