@@ -11,15 +11,15 @@ export default class SendEmail extends Component {
           message:'',
           topic:''
         };
-      this.handleSubmit = this.handleSubmit.bind(this);
+      this.handleSubmit2 = this.handleSubmit2.bind(this);
     }
 
    
   
-    handleChange = (evt,field) => {
+    handleChange2 = (evt,field) => {
       this.setState({ [field]: evt.target.value });  }
   
-    handleSubmit(event) {
+    handleSubmit2(event) {
 
 
     console.log(this.state)
@@ -45,10 +45,10 @@ export default class SendEmail extends Component {
         
         <div className="emailDiv">
         <MDBContainer >
-        <MDBInputGroup containerClassName="mb-3" prepend="Topic" hint="Topic" defaultValue={this.state.topic} onChange={(event)=>this.handleChange(event, "topic")} />
-        <MDBInputGroup containerClassName="mb-3" prepend="Email" type='email' hint="Email" defaultValue={this.state.email2} onChange={(event)=>this.handleChange(event, "email2")} />
-        <MDBInputGroup containerClassName="mb-3" prepend="Message" type="textarea" defaultValue={this.state.message} onChange={(event)=>this.handleChange(event, "message")}  />
-        <button  onClick={this.handleSubmit}>SEND</button>
+        <MDBInputGroup containerClassName="mb-3" prepend="Topic" hint="Topic" defaultValue={this.state.topic} onChange={(event)=>this.handleChange2(event, "topic")} />
+        <MDBInputGroup containerClassName="mb-3" prepend="Email" type='email' hint="Email" defaultValue={this.state.email2} onChange={(event)=>this.handleChange2(event, "email2")} />
+        <MDBInputGroup containerClassName="mb-3" prepend="Message" type="textarea" defaultValue={this.state.message} onChange={(event)=>this.handleChange2(event, "message")}  />
+        <button  onClick={this.handleSubmit2}>SEND</button>
         </MDBContainer>
 
         </div>
