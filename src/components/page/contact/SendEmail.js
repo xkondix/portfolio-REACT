@@ -7,7 +7,7 @@ export default class SendEmail extends Component {
     constructor(props) {
       super(props);
       this.state = {
-          email2:'',
+          value:'',
           message:'',
           topic:''
         };
@@ -33,7 +33,7 @@ export default class SendEmail extends Component {
     body: JSON.stringify({
       topic: this.state.topic,
       message: this.state.message,
-      emailRest: this.state.email2
+      value: this.state.value
 
     })
   })
@@ -47,7 +47,7 @@ export default class SendEmail extends Component {
         <div className="emailDiv">
         <MDBContainer >
         <MDBInputGroup containerClassName="mb-3" prepend="Topic" hint="Topic" defaultValue={this.state.topic} onChange={(event)=>this.handleChange2(event, "topic")} />
-        <MDBInputGroup containerClassName="mb-3" prepend="Email" type='email' hint="Email" defaultValue={this.state.email2} onChange={(event)=>this.handleChange2(event, "email2")} />
+        <MDBInputGroup containerClassName="mb-3" prepend="Email" hint="Email" defaultValue={this.state.value} onChange={(event)=>this.handleChange2(event, "value")} />
         <MDBInputGroup containerClassName="mb-3" prepend="Message" type="textarea" defaultValue={this.state.message} onChange={(event)=>this.handleChange2(event, "message")}  />
         <button  onClick={this.handleSubmit2}>SEND</button>
         </MDBContainer>
