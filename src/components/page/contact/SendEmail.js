@@ -7,7 +7,7 @@ export default class SendEmail extends Component {
     constructor(props) {
       super(props);
       this.state = {
-          email:'',
+          email2:'',
           message:'',
           topic:''
         };
@@ -31,7 +31,7 @@ export default class SendEmail extends Component {
       'Access-Control-Allow-Origin':'*'
     },
     body: JSON.stringify({
-      email: this.state.email,
+      email: this.state.email2,
       message: this.state.message,
       topic: this.state.topic
     })
@@ -46,7 +46,7 @@ export default class SendEmail extends Component {
         <div className="emailDiv">
         <MDBContainer >
         <MDBInputGroup containerClassName="mb-3" prepend="Topic" hint="Topic" defaultValue={this.state.topic} onChange={(event)=>this.handleChange(event, "topic")} />
-        <MDBInputGroup containerClassName="mb-3" prepend="Email" type='email' hint="Email" defaultValue={this.state.email} onChange={(event)=>this.handleChange(event, "email")} />
+        <MDBInputGroup containerClassName="mb-3" prepend="Email" type='email' hint="Email" defaultValue={this.state.email2} onChange={(event)=>this.handleChange(event, "email2")} />
         <MDBInputGroup containerClassName="mb-3" prepend="Message" type="textarea" defaultValue={this.state.message} onChange={(event)=>this.handleChange(event, "message")}  />
         <button  onClick={this.handleSubmit}>SEND</button>
         </MDBContainer>
