@@ -23,7 +23,7 @@ export default class SendEmail extends Component {
 
 
     console.log(this.state)
-    fetch('https://portfolio98kk.herokuapp.com/api/email', {
+    fetch('https://portfolio98kk.herokuapp.com/api/sendEmail', {
     method: 'POST',
     headers: {
       'Accept': 'application/json',
@@ -31,9 +31,10 @@ export default class SendEmail extends Component {
       'Access-Control-Allow-Origin':'*'
     },
     body: JSON.stringify({
-      email: this.state.email2,
+      topic: this.state.topic,
       message: this.state.message,
-      topic: this.state.topic
+      emailRest: this.state.email2
+
     })
   })
 
