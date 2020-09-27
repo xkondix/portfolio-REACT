@@ -44,6 +44,7 @@ export default function HomePage({ title,id}) {
   return (
     <div className={visible? "activeHome" : "hiddenHome"}>
 
+    <div className = "container">
     <div  className={"section"}>
       <div className="section-content" id={id}>
           <div id="text-photo">
@@ -56,6 +57,7 @@ export default function HomePage({ title,id}) {
               </div>
           </div>
       </div>
+    </div>
     </div>
    </div>
   );
