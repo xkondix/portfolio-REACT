@@ -57,8 +57,7 @@ export default class ChangeImgae extends React.Component {
             <AnimateOnChange
                 animationIn="fadeIn"
                 animationOut="fadeOut"
-                durationOut={1500}
-             >
+                durationOut={1500}>
                         <img
                         className="image"
                             src={this.state.images[this.state.currentImage]}
