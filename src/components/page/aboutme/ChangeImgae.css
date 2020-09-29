@@ -1,15 +1,16 @@
 .slide
 {
-  max-width: 400px;
-  max-height: 400px;
+  position: relative;
   overflow: hidden;
+  max-width: 80vh;
+  max-height: 80vh;
 
 }
 .image
 {
-    max-width: 400px;
-    max-height: 400px;
-    box-shadow: 1px 1px 10px 1px white, 0 17px 50px 0 rgba(0,0,0,0.19);
+
+  max-width: 60vh;
+  max-height: 60vh;
   
 }
 

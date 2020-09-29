@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import './AboutMePage.css';
 import ChangeImage from './ChangeImage';
-
+import Text from "./Text";
 
 export default function AboutMe({ title,id }) {
 
@@ -36,13 +36,17 @@ export default function AboutMe({ title,id }) {
       <div className="section-content" id={id}>
         <h1 id="about">
         {title}</h1>
-          <div id='describe'>
-            <p>text</p>
-        <div className="images">
-          <ChangeImage/>
+        <div className="wrapperAboutMe">
+            <figure className = 'galleryAboutMe1'>
+                <Text/>
+            </figure>
+
+            <figure className = 'galleryAboutMe2'>
+                <ChangeImage/>
+            </figure>
 
           </div>
-          </div>
+          
       </div>
     </div>
     </div>
