@@ -9,6 +9,8 @@
     background-color: lightskyblue;
     align-items: center;
     align-content: center;
+    resize: both;
+    overflow: auto;
 
 }
 
@@ -45,7 +47,6 @@ h2 {
     color: rgb(43, 37, 37);
     font-family: Verdana;
     text-decoration-style: wavy;
-    font-size: 3rem;
   }
 
   a{
