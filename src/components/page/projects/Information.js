@@ -15,7 +15,7 @@ export const Information = [
     {
         title : 'Car Robot RaspberryPi JAVA-PYTHON',
         describe : 'home',
-        src :"https://www.facebook.com/100000924787854/videos/pcb.3362156940491766/3362156147158512/",
+        src :'./videos/robotCar.mp4',
         link : "https://github.com/xkondix"
         },
     {

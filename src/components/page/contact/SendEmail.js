@@ -22,7 +22,6 @@ export default class SendEmail extends Component {
     handleSubmit2(event) {
 
 
-    console.log(this.state)
     fetch('https://portfolio98kk.herokuapp.com/api/sendEmail', {
     method: 'POST',
     headers: {
@@ -36,7 +35,15 @@ export default class SendEmail extends Component {
       value: this.state.value
 
     })
+
+
   })
+
+  this.setState( {
+    value:'',
+    message:'',
+    topic:''
+  });
 
       
     }

@@ -38,6 +38,13 @@ export default class SendRate extends Component {
     })
   })
 
+  this.setState( {
+    name: '',
+    email:'',
+    comment:'',
+    company:''
+  });
+
       
     }
   
@@ -51,7 +58,7 @@ export default class SendRate extends Component {
         <MDBInputGroup containerClassName="mb-3" prepend="Company" hint="It is not necessary" defaultValue={this.state.company} onChange={(event)=>this.handleChange(event, "company")} /> 
         <MDBInputGroup containerClassName="mb-3" prepend="Comment" type="textarea" defaultValue={this.state.comment} onChange={(event)=>this.handleChange(event, "comment")}  />
         <button  onClick={this.handleSubmit}>SEND</button>
-               </MDBContainer>
+            </MDBContainer>
 
         </div>
 
