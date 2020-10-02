@@ -17,12 +17,6 @@ export const Information = [
         describe : 'home',
         src :'https://www.youtube.com/watch?v=W2GISsvzdxw&feature=youtu.be',
         link : "https://github.com/xkondix"
-        },
-    {
-        title : 'xd',
-        describe : 'home',
-        src :"",
-        link : "https://github.com/xkondix"
         }
     
     ]
