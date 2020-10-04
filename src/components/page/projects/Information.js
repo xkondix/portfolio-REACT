@@ -8,15 +8,21 @@ export const Information = [
         },
     {
         title : 'AlcoPart JAVA-ANDROID',
-        describe : 'home',
+        describe : 'The project is an alcohol application targeting the android platform. I use only java language in project.',
         src :"",
         link : "https://github.com/xkondix"
         },
     {
         title : 'Car Robot RaspberryPi JAVA-PYTHON',
-        describe : 'home',
+        describe : 'I made a car robot from various parts. The robot brain is raspberry 3b+. I wrote two raspberry scripts in python which are responsible for motor control and communication with my android application in java. Connection is via WIFI',
         src :'https://www.youtube.com/watch?v=W2GISsvzdxw&feature=youtu.be',
-        link : "https://github.com/xkondix"
+        link : "https://github.com/xkondix?tab=repositories"
+        },
+    {
+        title : 'Other projects',
+        describe : 'The rest of the project you can be found in my repository.',
+        src :'',
+        link : "https://github.com/xkondix?tab=repositories"
         }
     
     ]

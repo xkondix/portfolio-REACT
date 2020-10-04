@@ -21,29 +21,39 @@ export default class SendRate extends Component {
   
     handleSubmit(event) {
 
+    
+    if(this.state.name!="" && this.state.email!="" && this.state.comment!="")
+    {
 
-    console.log(this.state)
-    fetch('https://portfolio98kk.herokuapp.com/api/data', {
-    method: 'POST',
-    headers: {
-      'Accept': 'application/json',
-      'Content-Type': 'application/json',
-      'Access-Control-Allow-Origin':'*'
-    },
-    body: JSON.stringify({
-      name: this.state.name,
-      email: this.state.email,
-      comment: this.state.comment,
-      company: this.state.company
-    })
-  })
 
-  this.setState( {
-    name: '',
-    email:'',
-    comment:'',
-    company:''
-  });
+        fetch('https://portfolio98kk.herokuapp.com/api/data', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin':'*'
+        },
+        body: JSON.stringify({
+          name: this.state.name,
+          email: this.state.email,
+          comment: this.state.comment,
+          company: this.state.company
+        })
+      })
+
+      this.setState( {
+        name: '',
+        email:'',
+        comment:'',
+        company:''
+      });
+      alert("Your comment has been sent")
+    }
+    else
+    {
+      alert("Error, check the form")
+
+    }
 
       
     }
@@ -53,10 +63,10 @@ export default class SendRate extends Component {
         
         <div className="layout">
         <MDBContainer >
-        <MDBInputGroup containerClassName="mb-3" prepend="Name" hint="Nick or Name" defaultValue={this.state.name} onChange={(event)=>this.handleChange(event, "name")} />
-        <MDBInputGroup containerClassName="mb-3" prepend="Email" type='email' hint="Email" defaultValue={this.state.email} onChange={(event)=>this.handleChange(event, "email")} />
-        <MDBInputGroup containerClassName="mb-3" prepend="Company" hint="It is not necessary" defaultValue={this.state.company} onChange={(event)=>this.handleChange(event, "company")} /> 
-        <MDBInputGroup containerClassName="mb-3" prepend="Comment" type="textarea" defaultValue={this.state.comment} onChange={(event)=>this.handleChange(event, "comment")}  />
+        <MDBInputGroup containerClassName="mb-3" prepend="Name" hint="Nick or Name" value={this.state.name} onChange={(event)=>this.handleChange(event, "name")} />
+        <MDBInputGroup containerClassName="mb-3" prepend="Email" type='email' hint="Email" value={this.state.email} onChange={(event)=>this.handleChange(event, "email")} />
+        <MDBInputGroup containerClassName="mb-3" prepend="Company" hint="It is not necessary" value={this.statecompany} onChange={(event)=>this.handleChange(event, "company")} /> 
+        <MDBInputGroup containerClassName="mb-3" prepend="Comment" type="textarea" value={this.statecomment} onChange={(event)=>this.handleChange(event, "comment")}  />
         <button  onClick={this.handleSubmit}>SEND</button>
             </MDBContainer>
 

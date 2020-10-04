@@ -22,28 +22,40 @@ export default class SendEmail extends Component {
     handleSubmit2(event) {
 
 
-    fetch('https://portfolio98kk.herokuapp.com/api/sendEmail', {
-    method: 'POST',
-    headers: {
-      'Accept': 'application/json',
-      'Content-Type': 'application/json',
-      'Access-Control-Allow-Origin':'*'
-    },
-    body: JSON.stringify({
-      topic: this.state.topic,
-      message: this.state.message,
-      value: this.state.value
+    if(this.state.topic!="" && this.state.message!="" && this.state.value!="") {
 
-    })
+          fetch('https://portfolio98kk.herokuapp.com/api/sendEmail', {
+          method: 'POST',
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+            'Access-Control-Allow-Origin':'*'
+          },
+          body: JSON.stringify({
+            topic: this.state.topic,
+            message: this.state.message,
+            value: this.state.value
+
+          })
 
 
-  })
+        })
 
-  this.setState( {
-    value:'',
-    message:'',
-    topic:''
-  });
+        this.setState( {
+          value:'',
+          message:'',
+          topic:''
+        });
+
+        alert("Your message has been sent")
+
+  }
+
+  else
+    {
+      alert("Error, check the form")
+
+    }
 
       
     }
@@ -53,9 +65,9 @@ export default class SendEmail extends Component {
         
         <div className="emailDiv">
         <MDBContainer >
-        <MDBInputGroup containerClassName="mb-3" prepend="Topic" hint="Topic" defaultValue={this.state.topic} onChange={(event)=>this.handleChange2(event, "topic")} />
-        <MDBInputGroup containerClassName="mb-3" prepend="Email" hint="Email" defaultValue={this.state.value} onChange={(event)=>this.handleChange2(event, "value")} />
-        <MDBInputGroup containerClassName="mb-3" prepend="Message" type="textarea" defaultValue={this.state.message} onChange={(event)=>this.handleChange2(event, "message")}  />
+        <MDBInputGroup containerClassName="mb-3" prepend="Topic" hint="Topic" value={this.state.topic} onChange={(event)=>this.handleChange2(event, "topic")} />
+        <MDBInputGroup containerClassName="mb-3" prepend="Email" hint="Email" value={this.state.value} onChange={(event)=>this.handleChange2(event, "value")} />
+        <MDBInputGroup containerClassName="mb-3" prepend="Message" type="textarea" value={this.state.message} onChange={(event)=>this.handleChange2(event, "message")}  />
         <button  onClick={this.handleSubmit2}>SEND</button>
         </MDBContainer>
 
