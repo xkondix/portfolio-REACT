@@ -15,33 +15,14 @@ h1#name
 img#me
 {
 
-    max-width: 70%;
-    max-height: 80%;
+ 
     margin-left: 80px;
     margin-top: 25px;
 
 }
 
-img#java
-{
-    
-    margin-top: 30px;
-}
 
-div#text-photo
-{
-    width: auto;
-    height: 550px;
-    display: flex;
-    
-}
 
-div#java
-{
-    margin-top: 100px;
-    margin-left: 50px;
-    
-}
 
 
 .activeHome {
@@ -52,3 +33,69 @@ div#java
     transition: all 1s;
 }
 
+.wrapperHome {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 15px;
+  }
+
+  .galleryHome__img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+
+@media only screen and  (min-width: 810px){
+.galleryHome1 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 9;
+}
+}
+
+@media only screen and  (min-width: 810px){
+.galleryHome2 {
+    grid-column-start: 4;
+    grid-column-end: 9;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+}
+
+@media only screen and  (min-width: 810px){
+.galleryHome3 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 3;
+    grid-row-end: 8;
+}
+}
+
+@media only screen and (max-width: 800px) and (min-width: 400px){
+.galleryHome1 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 9;
+    }
+}
+@media only screen and (max-width: 800px) and (min-width: 400px){
+.galleryHome2 {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 9;
+    }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 400px){
+.galleryHome3 {
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 3;
+    grid-row-end: 9;
+    }
+}

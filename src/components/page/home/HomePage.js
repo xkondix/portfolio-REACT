@@ -47,14 +47,19 @@ export default function HomePage({ title,id}) {
     <div className = "container">
     <div  className={"section"}>
       <div className="section-content" id={id}>
-          <div id="text-photo">
-            <img img src={photo} alt="me" id="me"/>
-              <div id="java">
-                <h1
-                id="name">
-                    Konrad Kowalczyk</h1>
+      <div className="wrapperHome">
+            <figure className = 'galleryHome1'>
+                <img img src={photo} alt="me" id="me"/>
+            </figure>
+
+              <figure className = 'galleryHome2'>
+                <h1 id="name"> Konrad Kowalczyk</h1>            
+              </figure>
+
+            <figure className = 'galleryHome3'>
                 <img img src={java} alt="java" id="java"/>
-              </div>
+            </figure>
+                     
           </div>
       </div>
     </div>
