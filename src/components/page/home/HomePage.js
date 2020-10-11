@@ -49,7 +49,7 @@ export default function HomePage({ title,id}) {
       <div className="section-content" id={id}>
       <div className="wrapperHome">
             <figure className = 'galleryHome1'>
-                <img img src={photo} alt="me" id="me"/>
+                <img img src={photo} alt="me" className="galleryHome__img"/>
             </figure>
 
               <figure className = 'galleryHome2'>
@@ -57,7 +57,7 @@ export default function HomePage({ title,id}) {
               </figure>
 
             <figure className = 'galleryHome3'>
-                <img img src={java} alt="java" id="java"/>
+                <img img src={java} alt="java" className="galleryHome__img"/>
             </figure>
                      
           </div>
