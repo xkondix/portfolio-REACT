@@ -1,3 +1,4 @@
+@media only screen and  (min-width: 1025px){
 .slide
 {
   position: relative;
@@ -6,6 +7,9 @@
   max-height: 80vh;
 
 }
+}
+
+@media only screen and  (min-width: 1025px){
 .image
 {
 
@@ -14,7 +18,47 @@
   max-height: 60vh;
   
 }
+}
 
+@media only screen and (max-width: 1024px) and (min-width: 200px){
+  .slide
+  {
+    position: relative;
+    overflow: hidden;
+    max-width: 60vh;
+    max-height: 60vh;
+  
+  }
+}
+  
+@media only screen and (max-width: 1024px) and (min-width: 200px){
+  .image
+  {
+  
+    
+    max-width: 30vh;
+    max-height: 30vh;
+    
+  }
+}
 
-
-
+@media only screen and  (min-width: 1025px){
+  .aboutText
+  {
+  
+    max-height: 60vh;
+  
+  }
+  }
+  
+  
+  @media only screen and (max-width: 1024px) and (min-width: 200px){
+    .aboutText
+    {
+      
+      max-height: 20vh;
+    
+    }
+  }
+    
+ 

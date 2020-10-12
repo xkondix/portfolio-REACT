@@ -64,26 +64,29 @@ getPagesNumbers = () => {
 
   return (
 
-    <div className="wrap">
+
+    <div className="wrapperProject">
+            <figure className = 'galleryProject1'>
+              
+                <Pager className="nav-two" bsSize="large">
+                    <div className="nav-content-two">
+                        {pagesNumbers}
+                    </div>
+        </Pager>
+            </figure>
+
+            <figure className = 'galleryProject2'>
+            <Content
+                  title ={Information[this.state.currentPage].title }
+                  src = {Information[this.state.currentPage].src }
+                  link = {Information[this.state.currentPage].link }
+                  content = {Information[this.state.currentPage].describe}
+              />
+            </figure>
+
+          </div>
 
 
-   <Pager>
-      {pagesNumbers} 
-  </Pager>
-
-  <div className="wrap2">
-
-    <Content
-    title ={Information[this.state.currentPage].title }
-    src = {Information[this.state.currentPage].src }
-    link = {Information[this.state.currentPage].link }
-    content = {Information[this.state.currentPage].describe}
-
-    />
-
-    </div>
-
-    </div>
 
   
     

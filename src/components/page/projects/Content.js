@@ -15,7 +15,7 @@ export default function Content({ title,content,link,src })
   
         <div className="video" align="center" valign="center"
         >
-        <h2>{title}</h2>
+        <h2 className = "h2Class">{title}</h2>
 
         <div className='player-wrapper'>
         <ReactPlayer

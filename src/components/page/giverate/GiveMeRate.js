@@ -38,11 +38,15 @@ export default function YourOpinion({ title,id }) {
       <div className="section-content" id={id}>
         <h1 >
           {title}</h1>
+          
+          <div className="wrapperRate">
+            <figure className = 'galleryRate1'>
+                <SendRate/>
+            </figure>
 
-          <div className="borderPx">
-
-          <SendRate/>
-          <DatatablePage/>
+            <figure className = 'galleryRate2'>
+               <DatatablePage/>
+            </figure>
 
           </div>
       </div>
