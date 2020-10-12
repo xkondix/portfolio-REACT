@@ -70,7 +70,6 @@ export default class ScrollReview extends Component {
         <div className="layoutScroll">
           <MDBDataTable
             scrollY
-            maxHeight="60vh"
             striped
             bordered
             small
