@@ -42,7 +42,7 @@ h1
   @media only screen and  (min-width: 1025px){
   .galleryRate2 {
     grid-column-start: 4;
-    grid-column-end: 12;
+    grid-column-end: 16;
     grid-row-start: 1;
     grid-row-end: 8;
   }
@@ -61,7 +61,7 @@ h1
       @media only screen and (max-width: 1024px) and (min-width: 200px){
         .galleryRate2 {
         grid-column-start: 1;
-        grid-column-end: 10;
+        grid-column-end: 14;
         grid-row-start: 11;
         grid-row-end: 14;
     }
