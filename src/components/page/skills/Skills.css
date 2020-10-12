@@ -30,80 +30,200 @@ h1
     transition: all 1s;
 }
 
+@media only screen and  (min-width: 1025px){
 .gallery1 {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
 }
+}
 
+@media only screen and  (min-width: 1025px){
 .gallery2 {
     grid-column-start: 3;
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 3;
 }
+}
 
+@media only screen and  (min-width: 1025px){
 .gallery3 {
     grid-column-start: 5;
     grid-column-end: 7;
     grid-row-start: 1;
     grid-row-end: 3;
 }
+}
 
+@media only screen and  (min-width: 1025px){
 .gallery4 {
     grid-column-start: 7;
     grid-column-end: 9;
     grid-row-start: 1;
     grid-row-end: 3;
 }
+}
 
+@media only screen and  (min-width: 1025px){
 .gallery5 {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 5;
 }
+}
 
+@media only screen and  (min-width: 1025px){
 .gallery6 {
     grid-column-start: 3;
     grid-column-end: 5;
     grid-row-start: 3;
     grid-row-end: 5;
 }
+}
 
+@media only screen and  (min-width: 1025px){
 .gallery7 {
     grid-column-start: 5;
     grid-column-end: 7;
     grid-row-start: 3;
     grid-row-end: 5;
 }
+}
 
+@media only screen and  (min-width: 1025px){
 .gallery8 {
     grid-column-start: 7;
     grid-column-end: 9;
     grid-row-start: 3;
     grid-row-end: 5;
 }
+}
 
+@media only screen and  (min-width: 1025px){
 .gallery9 {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 5;
     grid-row-end: 7;
 }
+}
 
+@media only screen and  (min-width: 1025px){
 .gallery10 {
     grid-column-start: 3;
     grid-column-end: 5;
     grid-row-start: 5;
     grid-row-end: 7;
 }
+}
 
+@media only screen and  (min-width: 1025px){
 .gallery11 {
     grid-column-start: 5;
     grid-column-end: 7;
     grid-row-start: 5;
     grid-row-end: 7;
 }
+}
 
+@media only screen and (max-width: 1024px) and (min-width: 200px){
+    .gallery1 {
+        grid-column-start: 3;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    }
+    
+    @media only screen and (max-width: 1024px) and (min-width: 200px){
+        .gallery2 {
+        grid-column-start: 8;
+        grid-column-end: 12;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    }
+    
+    @media only screen and (max-width: 1024px) and (min-width: 200px){
+        .gallery3 {
+        grid-column-start: 13;
+        grid-column-end: 17;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    }
+    
+    @media only screen and (max-width: 1024px) and (min-width: 200px){
+        .gallery4 {
+        grid-column-start: 3;
+        grid-column-end: 7;
+        grid-row-start: 4;
+        grid-row-end: 7;
+    }
+    }
+    
+    @media only screen and (max-width: 1024px) and (min-width: 200px){
+        .gallery5 {
+            grid-column-start: 8;
+            grid-column-end: 12;
+            grid-row-start: 4;
+            grid-row-end: 7;
+    }
+    }
+    
+    @media only screen and (max-width: 1024px) and (min-width: 200px){
+        .gallery6 {
+            grid-column-start: 13;
+            grid-column-end: 17;
+            grid-row-start: 4;
+            grid-row-end: 7;
+    }
+    }
+    
+    @media only screen and (max-width: 1024px) and (min-width: 200px){
+        .gallery7 {
+            grid-column-start: 3;
+            grid-column-end: 7;
+            grid-row-start: 8;
+            grid-row-end: 11;
+    }
+    }
+    
+    @media only screen and (max-width: 1024px) and (min-width: 200px){
+        .gallery8 {
+            grid-column-start: 8;
+            grid-column-end: 12;
+            grid-row-start: 8;
+            grid-row-end: 11;
+    }
+    }
+    
+    @media only screen and (max-width: 1024px) and (min-width: 200px){
+        .gallery9 {
+            grid-column-start: 13;
+            grid-column-end: 17;
+            grid-row-start: 8;
+            grid-row-end: 11;
+    }
+    }
+    
+    @media only screen and (max-width: 1024px) and (min-width: 200px){
+        .gallery10 {
+            grid-column-start: 3;
+            grid-column-end: 7;
+            grid-row-start: 12;
+            grid-row-end: 15;
+    }
+    }
+    
+    @media only screen and (max-width: 1024px) and (min-width: 200px){
+        .gallery11 {
+        grid-column-start: 8;
+        grid-column-end: 12;
+        grid-row-start: 12;
+        grid-row-end: 15;
+    }
+    }
